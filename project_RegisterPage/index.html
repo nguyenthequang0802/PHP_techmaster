@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="w-full h-full grid col-start-1 relative px-0 py-8 items-center">
+        <div class="travel-form-grid">
+            <div class="w-full px-[15px] mx-auto lg:max-w-6xl md:max-w-4xl sm:max-w-2xl">
+                <div class="logo text-center">
+                    <a class="brand-logo inline-block text-center lg:text-[50px] text-[40px] leading-[1.1rem] font-bold text-[#3f3a64] mb-8 capitalize tracking-[-1px] no-underline">
+                        Exploring
+                        <span class="font-light">Travel Form</span>
+                    </a>
+                </div>
+                <div class="w-full xl:w-9/10 lg:w-9/10 grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 xl:gap-16 lg:gap-16 gap-2.5 items-center my-0 mx-auto">
+                    <div class="form-left self-end">
+                        <img src="./images/travel.png" class="max-w-full">
+                    </div>
+                    <form class="form-right" action="process_registration.php" method="post">
+                        <div class="signUp-form p-12 sm:px-8 bg-[#1364CF] rounded-[10px]">
+                            <h2 class="text-[30px] text-white mb-4">Sign Up</h2>
+                            <div class="input">
+                                <input class="w-full h-[55px] outline-none border-white bg-white text-[#777] text-[18px] rounded-[6px] mb-[15px] p-[20px]" type="name" id="name" name="name" placeholder="Họ và tên" required>
+                            </div>
+                            <div class="input">
+                                <input class="w-full h-[55px] outline-none border-white bg-white text-[#777] text-[18px] rounded-[6px] mb-[15px] p-[20px]" type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+                            </div>
+                            <div class="input">
+                                <input class="w-full h-[55px] outline-none border-white bg-white text-[#777] text-[18px] rounded-[6px] mb-[15px] p-[20px]" type="password" id="password" name="password" placeholder="Mật khẩu" required>
+                            </div>
+                            <div class="input">
+                                <input class="w-full h-[55px] outline-none border-white bg-white text-[#777] text-[18px] rounded-[6px] mb-[15px] p-[20px]" type="password" id="confirm_password" name="confirm_password" placeholder="Nhập lại mật khẩu" required>
+                            </div>
+                            <div class="input">
+                                <input class="w-full h-[55px] outline-none border-white bg-white text-[#777] text-[18px] rounded-[6px] mb-[15px] p-[20px]" type="text" id="phone" name="phone" placeholder="Số điện thoại" required>
+                            </div>
+                            <div class="input">
+                                <input class="w-full h-[55px] outline-none border-white bg-white text-[#777] text-[18px] rounded-[6px] mb-[15px] p-[20px]" type="date" id="date" name="date" placeholder="dd/mm/YY" required>
+                            </div>
+                            <div class="input">
+                                <input class="w-full h-[55px] outline-none border-white bg-white text-[#777] text-[18px] rounded-[6px] mb-[15px] p-[20px]" type="text" id="address" name="address" placeholder="Đại chỉ">
+                            </div>
+                            <button class="w-full h-[55px] text-[#3f3a64] font-semibold rounded-[6px] bg-[#fdd387] ease-out hover:bg-[#f9c566] hover:text-[#3f3a64]">Sign Up</button>
+                            <p class="text-[18px] text-[#eee] mt-[25px] text-center">
+                                Already have an account?
+                                <a class="text-[18px] text-[#fff] mt-[25px] text-center font-medium hover:text-[#f9c566]">Sign In</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

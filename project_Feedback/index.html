@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[url('./images/banner.jpg')] bg-cover bg-fixed text-center bg-no-repeat text-[100%]">
+    <h1 class="font-medium text-[#fdfbfb] text-center capitalize lg:text-[3.5em] md:text-[3.3em] sm:text-[3em] lg:tracking-[4px] sm:tracking-[3px] lg:mt-[1.3em] md:mt-[1em] sm:mt-[0.85em] lg:mb-[0.8em] mb-[0.5em]">Feedabck Form</h1>
+    <div class="bg-[url('./images/bg.jpg')] bg-cover bg-fixed bg-center bg-no-repeat bg-top lg:w-[50%] md:w-[65%] sm:w-[80%] my-0 mx-auto lg:px-[4em] lg:py-[3em] md:p-[3em] sm:p-[2.5em]">
+        <form class="mt-[1px] h-full block" action="process.php" method="post">
+            <div class="lg:w-[49%] md:w-[49%] w-full mb-[1.5em] float-left">
+                <label class="text-[14px] text-[#000] float-left text-left text-medium mb-[10px] capitalize tracking-[0.7px]">
+                    <i class="fa-solid fa-user text-[1.1em] mr-[3px] text-[#0078d7]"></i>
+                    Name:
+                </label>
+                <input type="text" name="name" class="w-full h-[16px] text-black tracking-[0.5px] px-[8px] py-[15px] box-border border border-solid border-[#4e4e4e] bg-none shadow-[2px_2px_6px_rgba(0,0,0,0.49)]" required>
+            </div>
+            <div class="lg:w-[49%] md:w-[49%] w-full mb-[1.5em] float-right">
+                <label class="text-[14px] text-[#000] float-left text-left text-medium mb-[10px] capitalize tracking-[0.7px]">
+                    <i class="fa-solid fa-envelope text-[1.1em] mr-[3px] text-[#0078d7]"></i>
+                    Email:
+                </label>
+                <input type="email" name="email" class="w-full h-[16px] text-black tracking-[0.5px] px-[8px] py-[15px] box-border border border-solid border-[#4e4e4e] bg-none shadow-[2px_2px_6px_rgba(0,0,0,0.49)]" required>
+            </div>
+            <div class="clear-both"></div>
+            <div class="w-full mb-[1.5em]">
+                <label class="text-[14px] text-[#000] float-left text-left text-medium mb-[10px] capitalize tracking-[0.7px]">
+                    <i class="fa-solid fa-comments text-[1.1em] mr-[3px] text-[#0078d7]"></i>
+                    Feedback type:
+                </label>
+                <select name="type_fb" class="w-full h-[16px] text-black tracking-[0.5px] px-[8px] py-[15px] box-border border border-solid border-[#4e4e4e] bg-none shadow-[2px_2px_6px_rgba(0,0,0,0.49)]">
+                    <option></option>
+                    <option value="comments">Comments</option>
+                    <option value="bug">Bug Reports</option>
+                    <option value="ques">Question</option>
+                    <option value="suggestion">Suggestions</option>
+                </select>
+            </div>
+            <div class="w-full mb-[1.5em]">
+                <label class="text-[14px] text-[#000] float-left text-left text-medium mb-[10px] capitalize tracking-[0.7px]">
+                    <i class="fa-solid fa-comments text-[1.1em] mr-[3px] text-[#0078d7]"></i>
+                    Describe Feedback:
+                </label>
+                <input type="text" name="describe" class="w-full h-[100px] text-black tracking-[0.5px] px-[8px] py-[15px] box-border border border-solid border-[#4e4e4e] bg-none shadow-[2px_2px_6px_rgba(0,0,0,0.49)]" required>
+            </div>
+            <div class="clear-both"></div>
+            <div class="w-[100%]">
+                <input type="submit" name="submit" value="Submit" class="text-white text-[1.1em] mt-[2em] px-[6em] py-[0.5em] border-[2px] border-solid border-[#ff4c4c] bg-[#ff4c4c] transition-all ease-out delay-500 hover:bg-[#0078d7] hover:border-[#0078d7]">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

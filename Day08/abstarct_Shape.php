@@ -14,6 +14,9 @@ class Circle extends shape {
         parent::__construct($name);
         $this->radius = $radius;
     }
+    public function getName (){
+        return $this->name;
+    }
     public function calculateArea()
     {
         // TODO: Implement calculateArea() method.
@@ -36,6 +39,7 @@ class square extends shape {
 
 $circle = new Circle("circle", 5);
 echo "Diện tích hình tròn: " . $circle->calculateArea() . "<br>";
+
 
 $square = new square("square", 7);
 echo "Diện tích hình vuông: " . $square->calculateArea() . "<br>";

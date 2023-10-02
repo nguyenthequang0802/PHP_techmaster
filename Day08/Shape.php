@@ -44,6 +44,7 @@ class rectangle implements shape {
 $square = new square(7);
 echo "Diện tích hình vuông = " . $square->calArea() . "<br>";
 echo "Chu vi hình vuông = " . $square->calPerimeter() . "<br>";
+echo "----------------------------------<br>";
 
 $rectangle = new rectangle(4, 6);
 echo "Diện tích hình chữ nhật: " . $rectangle->calArea() . "<br>";

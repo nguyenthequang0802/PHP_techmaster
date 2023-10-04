@@ -7,7 +7,6 @@ require_once __DIR__ . '/lib/functions.php';
 const ALLOWED_FILES = [
     'image/png' => 'png',
     'image/jpg' => 'jpg',
-    'image/jpeg' => 'jpeg',
     // viết thêm code
 ];
 // 2.Cấu hình dung lượng file lớn nhất được upload

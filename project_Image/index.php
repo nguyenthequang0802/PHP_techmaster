@@ -205,7 +205,7 @@
                     <div class="grid grid-cols-1 gap-4">
 
                         <div class="col-span-1">
-                            <form method="post" action="">
+                            <form method="post" action="#" enctype="multipart/form-data">
                                 <h3 class="text-center font-bold text-blue-600 uppercase text-lg"> Thêm File</h3>
 
                                 <div class="mt-2 w-full">

@@ -15,16 +15,22 @@
         <div class="main container mx-auto pt-32 text-center">
             <h1 class="title text-yellow-100 text-[60px] font-bold mb-[20px]">Weather informations</h1>
             <div class="mb-[20px]">
-                <select class="select-city bg-[#3399FF] rounded-[15px] w-[350px] border-none outline-none h-[44px] pl-[10px] text-[#fff]" id="select-city">
-                    <option value="1" selected>TP Hà Nội</option>
-                    <option value="2">Hải Phòng</option>
-                    <option value="3">Đà Nẵng</option>
-                    <option value="4">TP Hồ Chí Minh</option>
+                <select class="select-city bg-[#3399CC] rounded-[15px] w-[350px] border-none outline-none h-[44px] pl-[10px] text-[#fff]" id="select-city">
+                    <option value="ha noi" selected>TP Hà Nội</option>
+                    <option value="haiphong">Hải Phòng</option>
+                    <option value="london">Luân Đôn</option>
+                    <option value="bangkok">Băng Cốc</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="beijing">Bắc Kinh</option>
+                    <option value="berlin">BerLin</option>
+                    <option value="hongkong">Hồng Kông</option>
+                    <option value="danang">Đà Nẵng</option>
+                    <option value="ho chi minh">TP Hồ Chí Minh</option>
                 </select>
             </div>
             
             <div class="flex justify-center">
-                <div class="weather-info p-[45px] bg-[#3399CC] w-[455px] text-[#fff]">
+                <div class="weather-info p-[45px] bg-[#3399CC] w-[455px] text-[#fff] rounded-[15px]">
                     <div class="flex justify-around pb-[15px]">
                         <div class="text-[40px] mr-[30px] text-center">
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" id="weather_icon" class="h-[85px] w-[85px]">
@@ -46,18 +52,18 @@
                             <i class="fa-solid fa-temperature-three-quarters mt-[4px] mr-[6px]"></i>
                             <p id="feel-like">Cảm nhận 30℃</p>
                         </div>
-    
-                        <div class="flex">
-                            <i class="fa-solid fa-wind mt-[4px] mr-[6px]"></i>
-                            <p id="wind-speed">Tốc độ gió 5.88KM/h</p>
-                        </div>
-    
+
                         <div class="flex">
                             <i class="fa-solid fa-droplet mt-[4px] mr-[6px]"></i>
                             <p id="humidity">Độ ẩm 69%</p>
                         </div>
     
-                        <div class="flex">
+                        <div class="flex justify-start gap-2 items-center">
+                            <i class="fa-solid fa-wind mt-[4px] mr-[6px]"></i>
+                            <p id="wind-speed">Tốc độ gió 5.88KM/h</p>
+                        </div>
+
+                        <div class="flex justify-start gap-2 items-center">
                             <i class="fa-solid fa-temperature-three-quarters mt-[4px] mr-[6px]"></i>
                             <p id="pressure">Áp lực k.khí 1004hAp</p>
                         </div>

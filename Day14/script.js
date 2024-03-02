@@ -1,29 +1,29 @@
-let address = [
-    {
-        id: 1,
-        name: "Ha Noi",
-        lat: 21.007570,
-        lon: 105.724941,
-    },
-    {
-        id: 2,
-        name: "Hai Phong",
-        lat: 20.856990,
-        lon: 106.680736,
-    },
-    {
-        id: 3,
-        name: "Da Nang",
-        lat: 16.061102,
-        lon: 108.226728,
-    },
-    {
-        id: 4,
-        name: "Ho Chi Minh",
-        lat: 10.821280,
-        lon: 106.649404,
-    }
-]
+// let address = [
+//     {
+//         id: 1,
+//         name: "Ha Noi",
+//         lat: 21.007570,
+//         lon: 105.724941,
+//     },
+//     {
+//         id: 2,
+//         name: "Hai Phong",
+//         lat: 20.856990,
+//         lon: 106.680736,
+//     },
+//     {
+//         id: 3,
+//         name: "Da Nang",
+//         lat: 16.061102,
+//         lon: 108.226728,
+//     },
+//     {
+//         id: 4,
+//         name: "Ho Chi Minh",
+//         lat: 10.821280,
+//         lon: 106.649404,
+//     }
+// ]
 const OPEN_WEATHER_KEY = "8dde90c0c44fd4bdbd5247210fd0a65f";
 const OPEN_WEATHER_API = "https://api.openweathermap.org/data/2.5/weather?lang=vi&";
 
@@ -32,10 +32,10 @@ $("#select-city").change(function() {
     getWeatherInfo(selectedCityId);
 })
 
-function getWeatherInfo(city_id) {
-    const city = address.find(city => city.id === parseInt(city_id));
+function getWeatherInfo() {
+    let city = $("#select-city").val().trim();
     console.log(city);
-    const apiUrl = `${OPEN_WEATHER_API}lat=${city.lat}&lon=${city.lon}&appid=${OPEN_WEATHER_KEY}`;
+    const apiUrl = `${OPEN_WEATHER_API}q=${city}&appid=${OPEN_WEATHER_KEY}`;
     console.log("apiUrl",apiUrl);
 
     $.ajax({
